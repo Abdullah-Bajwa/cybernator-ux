@@ -1,0 +1,242 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the background color for the entire page */
+  body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgba(86, 86, 120, 0.3);
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Navigation menu */
+  nav {
+    background-color: rgba(86, 86, 86, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-logo{
+    height: 3rem;
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nav li {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Style headings */
+  h1, h2, h3 {
+    color: #ffffff;
+  }
+  
+  /* Style links */
+  a {
+    color: #00bfff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .super-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .super-container > :first-child {
+    margin-top: 0;
+  }
+  
+  .super-container > :last-child {
+    margin-bottom: 0;
+  }
+
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error{
+    background-color: rgb(255, 161, 161);
+    color: red;
+  }
+  
+  /* Style buttons */
+  .button {
+    background-color: #00bfff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0099cc;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(86, 86, 120, 0.3);
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  
+  
+  /*Form Styles*/
+
+  /* Overall Container */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  padding: 5%;
+  /*border: 1px solid #ccc; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  margin: 0 auto; /* Center the form horizontally */
+  min-width: 500px;
+}
+
+/* Headings */
+.form-container h1, .form-container h2, .form-container h3 {
+  text-align: center; /* Center headings */
+}
+
+/* Form Inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: none; /* Remove border */
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  background-color: rgba(0,0,0,0);
+  color: white;
+  outline: none;
+}
+
+/* Submit Button */
+.form-container button[type="submit"] {
+  background-color: #007bff; /* Change to your desired button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Make the button a block-level element */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+
+/* Add hover effect for the button if desired */
+.form-container button[type="submit"]:hover {
+  background-color: #0056b3; /* Change to your desired hover color */
+}
+
+  
+  /* Add more specific styles for different elements and components as needed */
+
+/* Styling for the logout button */
+.logout-button {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  color: red; /* Red text color */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+.toggle-button {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  color: rgb(255, 255, 255); /* Red text color */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.flex-container {
+  padding: 30px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.chart-container {
+  width: 16vw;
+  height: 16vw; /* Set the height to match the width for a square shape */
+  border: 2px solid #c0c0c0; /* White/ash colored border */
+  border-radius: 10px; /* Rounded border */
+  padding: 20px; /* Add reasonable padding */
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.graph-container {
+  width: 25vw;
+  height: 16vw; /* Set the height to match the width for a square shape */
+  border: 2px solid #c0c0c0; /* White/ash colored border */
+  border-radius: 10px; /* Rounded border */
+  padding: 20px; /* Add reasonable padding */
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-mode{
+  background-color: #ccc;
+  color:#0099cc;
+}
+.light-mode-danger{
+  background-color: #ccc;
+  color: red;
+}
+
+
+
+
+  
